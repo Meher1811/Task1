@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nykaa Cosmetics</title>  
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body style="background-color: #000;">
+     <div id="container">
+        <div id="content">
+            <div id="nav" class="topnav">
+                <ul>
+                    <li style="float:left"><a class="active-heading nykaa" href="#NYKAA"> NYKAA </a></li>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#aboutus"> About Us </a></li>
+                    <li><a href="#products"> Products </a></li>
+                    <div class="search">
+                        <form action="#"> 
+                            <input type="text" placeholder="Search.." name="search">  
+                        </form> 
+                    </div> 
+                
+                </ul>
+
+            </div>
+            <div id="carousel">
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                      <img src="Huda.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                      <img src="fenty.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                      <img src="lakme.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div><br>
+                    
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </div>
+            <div id="offers" class="anotherbox" >
+                <div id="offers-heading" class="grey-box">
+                    Offers
+                </div>
+                <div class="blue-box">
+                    <a href="#" ><img class="offers-image"  src="blush.jpg">  </a>
+                    <br>Blush<br>Get upto 15% off
+                </div>
+                <div class ="yellow-box">
+                    <a href="#" ><img class="offers-image"  src="mascara.jpg">  </a>
+                    <br>Mascara<br>Get upto 20% off
+                </div>
+                <div class ="green-box">
+                    <a href="#" ><img class="offers-image"  src="foundation.jpg">  </a>
+                    <br>Foundations<br>Get upto 30% off
+                </div>
+                <div class ="red-box">
+                    <a href="#" ><img class="offers-image"  src="lipstick.jpg">  </a>
+                    <br>Lipsticks<br>Get upto 10% off
+                </div>
+                
+
+
+            </div>
+            <br><br>
+            
+            <div id="brands" class="anotherbox" >
+                <div id="brands-heading" class="grey-box">
+                Brands
+                </div>
+                <div class="row">
+                <div class="column brands-text">
+                    <a href="#" ><img class="brands-image"  src="mac.jpg">  </a> 
+                    <br>Products
+                </div>
+                
+                <div class="column brands-text">    
+                    <a href="#" ><img class="brands-image"  src="maybelline.jpg">  </a>
+                    <br>Products
+                </div>
+                </div>
+
+            </div>
+           <br><br>
+            <div id="categories" class="categoriesbox">
+                <div id="categories-heading" class="grey-box">
+                    Categories
+                    </div>
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="eye.png">  </a>
+                        <br><strong>Eye makeup</strong><br>
+                        </div>
+
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="perfume.png">  </a>
+                        <br><strong>Perfume</strong><br>
+                        </div>
+
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="nailpolish.png">  </a>
+                        <br><strong>Nail Polish</strong><br>
+                        </div>
+                                
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="lip.png">  </a>
+                        <br><strong>Lip makeup</strong> <br>
+                        </div>
+                                    
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="hair.png">  </a>
+                        <br><strong>Hair styling</strong><br>
+                        </div>
+
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="bb.png">  </a>
+                        <br><strong>Blender</strong> <br>
+                        </div>
+                    
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="skincare.png">  </a>
+                        <br><strong>Skincare</strong><br>
+                        </div>
+
+                    <div class="white-box">
+                        <a href="#" ><img class="offers-image"  src="brushes.png">  </a>
+                        <br><strong>Brushes</strong><br>
+                        </div>
+
+                </div>
+        </div>
+       <br>
+        <div class="footer">
+            Copyright © Nykaa 2020
+
+        </div>
+     </div>
+        
+
+
+    </body>
+</html>
